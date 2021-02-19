@@ -60,40 +60,31 @@
       }
     </script>
     <% } %>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/31bf66063d035b96329b69da5/0c3be7094379a0f176db23854.js");</script>
   </head>
 
   <body class="antialiased w-full text-gray-700">
-    <div class="max-w-screen-md mx-auto">
-      <div class="border-b border-gray-300">
-        <div class="pt-16 pb-8">
-          <h1 class="font-semibold text-3xl text-gray-800"><%= site.title %></h1>
-          <div class="text-xl"><%= site.description %></div>
+      <div class="w-full bg-cover bg-center" style="height:32rem; background-image: url('/assets/images/header.jpg')">
+        <div class="flex items-center justify-center h-full w-full bg-gray-400 bg-opacity-50">
+          <div class="text-center">
+            <a href="/"><img src="/assets/images/logo.png" class="max-width-100 inline-block" alt=""></a>
+            <h1 class="text-white text-2xl font-semibold md:text-3xl"><%= site.title %></h1>
+            <p class="text-white text-xl"><%= site.description %></p>
+          </div>
         </div>
-        <nav>
-          <ul class="flex flex-wrap text-xl">
-            <li class="mr-6">
-              <a class="text-gray-700 border-none hover:no-underline hover:text-gray-800" href="/"
-                >Home</a
-              >
-            </li>
-            <li class="mr-6">
-              <a
-                class="text-gray-700 border-none hover:no-underline hover:text-gray-800"
-                href="https://github.com/ixartz/Eleventy-Starter-Boilerplate"
-              >
-                GitHub
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
+      <div class="max-w-screen-md mx-auto">
+        <div class="text-xl py-5"><%- content %></div>
 
-      <div class="text-xl py-5"><%- content %></div>
-
-      <div class="border-t border-gray-300 text-center py-8">
-        Made with <span role="img" aria-label="Love">♥</span> by
-        <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>
-      </div>
+        <div class="border-t border-gray-300 text-center py-8 flex justify-between p-5">
+          <div>
+            © Swiss Wutan <%= new Date().getFullYear() %>
+          </div>
+          <div>
+          Made with <span role="img" aria-label="Love">♥</span> by
+          <a href="https://sahli-interactive.ch">sahli:interactive</a>
+          </div>
+        </div>
     </div>
   </body>
 </html>

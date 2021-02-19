@@ -9,24 +9,58 @@ eleventyComputed:
   title: '<% if (pagination.pageNumber > 0) { %><%= `Page ${pagination.pageNumber + 1} | ${site.title}` %><% } else { %><%= site.title %><% } %>'
 ---
 
-<ul>
-  <% list.forEach((post) => { %>
-  <li class="mb-3 flex justify-between">
-    <a href="<%= post.url %>"><%= post.data.title %></a>
-
-    <div><%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %></div>
-  </li>
-  <% }) %>
-</ul>
-
-<div class="text-sm flex justify-between">
-  <% if (pagination.previous) { %>
-  <div>
-    <a href="<%= pagination.previous.replace(/index.html$/, "") %>">← Newer Posts</a>
-  </div>
-  <% } %> <% if (pagination.next) { %>
-  <div class="text-right ml-auto">
-    <a href="<%= pagination.next.replace(/index.html$/, "") %>">Older Posts →</a>
-  </div>
-  <% } %>
+<div class="text-gray-600 text-center p-5">
+    <p class="text-sm md:text-lg">
+        Kungfu heisst, den Prozess antizipieren zu lernen, um die Geschehnisse mit Geschick in eine Richtung lenken zu
+        können. Der Begriff steht in enger Verbindung mit den überlieferten Kampfkünsten des alten Chinas.<br><br>Unser Verein
+        sieht sich in der Tradition des Taiwanesischen Wutan Verbandes, der 1966 von Meister Liu Yun Qiao in Taiwan
+        gegründet wurde. Im Interesse steht die Erforschung der historischen Kampfkünste und ihrer technischen und
+        philosophischen Prinzipien. Wir bieten jährlich schweizweite Seminare und online Kurse an, um die Ideen des
+        Wutan zu verbreiten.<br><br> Registriere dich in für unseren Newsletter und erhalte aktuelle Infos über unsere
+        Tätigkeiten und Veranstaltungen. Für weitere Informationen kannst Du uns auch per <a href="mailto:kungfu@swisswutan.ch">Mail</a> kontaktieren.
+    </p>
+    <ul class="w-full max-w-md mx-auto my-5">
+        <li>
+            <a class="flex justify-center items-center text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2 hover:no-underline" href="/assets/statuten.pdf">
+                <span class="bg-gray-400 h-2 w-2 m-2 rounded-full"></span>
+                <div class="text-sm md:text-lg font-medium px-2">Unsere Statuten</div>
+            </a>
+        </li>
+        <li>
+            <a class="flex justify-center items-center text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2 hover:no-underline" href="mailto:kungfu@swisswutan.ch">
+                <span class="bg-gray-400 h-2 w-2 m-2 rounded-full"></span>
+                <div class="text-sm md:text-lg font-medium px-2">Kontakt</div>
+            </a>
+        </li>
+        <% list.forEach((post) => { %>
+            <li>
+                <a class="flex justify-center items-center text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2 hover:no-underline" href="<%= post.url %>">
+                    <span class="bg-gray-400 h-2 w-2 m-2 rounded-full"></span>
+                    <div class="text-sm md:text-lg font-medium px-2"><%= post.data.title %></div>
+                </a>
+            </li>
+        <% }) %>
+    </ul>
 </div>
+
+<!--<ul>-->
+<!--  <% list.forEach((post) => { %>-->
+<!--  <li class="mb-3 flex justify-between">-->
+<!--    <a href="<%= post.url %>"><%= post.data.title %></a>-->
+
+<!--    <div><%= this.dateFns.format(new Date(post.data.date), 'LLLL d, yyyy') %></div>-->
+<!--  </li>-->
+<!--  <% }) %>-->
+<!--</ul>-->
+
+<!--<div class="text-sm flex justify-between">-->
+<!--  <% if (pagination.previous) { %>-->
+<!--  <div>-->
+<!--    <a href="<%= pagination.previous.replace(/index.html$/, "") %>">← Newer Posts</a>-->
+<!--  </div>-->
+<!--  <% } %> <% if (pagination.next) { %>-->
+<!--  <div class="text-right ml-auto">-->
+<!--    <a href="<%= pagination.next.replace(/index.html$/, "") %>">Older Posts →</a>-->
+<!--  </div>-->
+<!--  <% } %>-->
+<!--</div>-->

@@ -1,8 +1,8 @@
 {
-  "site_name": "Starter",
-  "title": "Eleventy Starter Boilerplate",
-  "description": "Starter code for your 11ty blog Boilerplate",
-  "url": "https://example.com",
-  "locale": "en",
-  "author": "Anonymous"
+  "site_name": "Swiss Wutan",
+  "title": "Swiss Wutan",
+  "description": "Die Kultur der Kampfkünste fördern",
+  "url": "https://swisswutan.ch",
+  "locale": "de",
+  "author": "Swiss Wutan"
 }
