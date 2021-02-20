@@ -31,8 +31,6 @@ Der Provider der Seiten erhebt und speichert automatisch Informationen in so gen
 
 Diese Daten sind nicht direkt bestimmten Personen zuortbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt werden.
 
-Diese Daten sowie alle Daten dieser Website werden bei unserem Hosting-Provider DigitalOcean LLC, 101 Avenue of the Americas, 10th Floor, New York, NY 10013, USA in einem Rechenzentrum in Frankfurt (Deutschland) gespeichert, deren Datenschutzerklärung finden Sie hier.
-
 ## SSL-Verschlüsselung
 
 Diese Seite nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.

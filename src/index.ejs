@@ -19,22 +19,22 @@ eleventyComputed:
         Wutan zu verbreiten.<br><br> Registriere dich in für unseren Newsletter und erhalte aktuelle Infos über unsere
         Tätigkeiten und Veranstaltungen. Für weitere Informationen kannst Du uns auch per <a href="mailto:kungfu@swisswutan.ch">Mail</a> kontaktieren.
     </p>
-    <ul class="w-full max-w-md mx-auto my-5">
+    <ul class="w-full my-5">
         <li>
-            <a class="flex justify-center items-center text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2 hover:no-underline" href="/assets/statuten.pdf">
+            <a class="flex justify-center md:justify-start items-center text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2 hover:no-underline" href="/assets/statuten.pdf">
                 <span class="bg-gray-400 h-2 w-2 m-2 rounded-full"></span>
                 <div class="text-sm md:text-lg font-medium px-2">Unsere Statuten</div>
             </a>
         </li>
         <li>
-            <a class="flex justify-center items-center text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2 hover:no-underline" href="mailto:kungfu@swisswutan.ch">
+            <a class="flex justify-center md:justify-start items-center text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2 hover:no-underline" href="mailto:kungfu@swisswutan.ch">
                 <span class="bg-gray-400 h-2 w-2 m-2 rounded-full"></span>
                 <div class="text-sm md:text-lg font-medium px-2">Kontakt</div>
             </a>
         </li>
         <% list.forEach((post) => { %>
             <li>
-                <a class="flex justify-center items-center text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2 hover:no-underline" href="<%= post.url %>">
+                <a class="flex justify-center md:justify-start items-center text-gray-700 hover:text-blue-400 hover:bg-blue-100 rounded-md px-2 py-2 my-2 hover:no-underline" href="<%= post.url %>">
                     <span class="bg-gray-400 h-2 w-2 m-2 rounded-full"></span>
                     <div class="text-sm md:text-lg font-medium px-2"><%= post.data.title %></div>
                 </a>
